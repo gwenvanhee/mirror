@@ -235,15 +235,15 @@ canvas.fade-in {
 }
 
 .hover {
-    z-index: 9999;
+	z-index: 9999;
 }
 
 .inner {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    @include transition-duration(1.5s);
-    @include transform-style(preserve-3d);
+	width: 100%;
+	height: 100%;
+	position: relative;
+	@include transition-duration(1.5s);
+	@include transform-style(preserve-3d);
 }
 
 .hover .inner {
@@ -253,23 +253,23 @@ canvas.fade-in {
 
 .front,
 .back {
-    width: inherit;
+	width: inherit;
 	height: inherit;
-    position: absolute;
-    @include backface-visibility(hidden);
+	position: absolute;
+	@include backface-visibility(hidden);
 }
 
 .front {
-    background: #000;
-    opacity: 0.8;
-    z-index: 2;
+	background: #000;
+	opacity: 0.8;
+	z-index: 2;
 }
 
 .back {
-    background: #FFF;
-    border-radius: 0 50%;
-    box-shadow: 0 0 45px rgba(0, 0, 0, 0.75);
-    @include rotateY(180deg);
+	background: #FFF;
+	border-radius: 0 50%;
+	box-shadow: 0 0 45px rgba(0, 0, 0, 0.75);
+	@include rotateY(180deg);
 }
 
 .back:after {
