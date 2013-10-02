@@ -331,9 +331,9 @@ var DOM = (function() {
 	'use strict';
 
 	var mirror = document.querySelector('#mirror'),
-		canvas = document.querySelector('canvas'),
+	    canvas = document.querySelector('canvas'),
 
-		pixels, colors;
+	    pixels, colors;
 
 
 	//
@@ -439,7 +439,7 @@ var Sound = (function() {
 
 
 	//
-	// GENERATE SOUNDS --------------------------------------
+	// GENERATE SOUND ---------------------------------------
 	//
 
 	var generator = function() {
