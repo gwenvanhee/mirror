@@ -1,59 +1,119 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>mirror by gwenvanhee</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
 
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+    <!-- SEO /////////////////////////////////////////////////////////////////////// -->
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+    <title>Mirror</title>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+    <meta name="description" content="Webcam motion detection experiment" />
+    <meta name="keywords" content="mirror, gwenvanhee, HTML5, javascript, motion detection, webcam, WebRTC, Web Audio API, canvas, CSS3" />
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+    <meta name="robots" content="noodp, noydir" />
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="cleartype" content="on" />
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+    <!-- G+ AND FACEBOOK /////////////////////////////////////////////////////////// -->
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+    <!--
+    Added Facebook Share Button support
+    http://davidwalsh.name/facebook-meta-tags
+    http://ogp.me
+    -->
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mirror" />
+    <meta property="og:title" content="Mirror" />
+    <meta property="og:description" content="Webcam motion detection experiment" />
+    <meta property="og:url" content="http://gwenvanhee.github.io/mirror/" />
+    <meta property="og:image" content="http://gwenvanhee.github.io/mirror/icons/200x200.jpg" />
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+    <link rel="image_src" href="http://gwenvanhee.github.io/mirror/icons/200x200.jpg" />
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/gwenvanhee">gwenvanhee</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!-- TWITTER CARDS ///////////////////////////////////////////////////////////// -->
+
+    <!--
+    Images for Twitter Cards should be min. 280px width, and min. 150px height (max. 1MB)
+    Note: you'll need to validate your cards @twitter (after launch) for twitter cards to work
+    https://dev.twitter.com/docs/cards/validation/validator
+    -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@gwenvanhee" />
+    <meta name="twitter:title" content="Mirror" />
+    <meta name="twitter:description" content="Webcam motion detection experiment" />
+    <meta name="twitter:image:src" content="http://gwenvanhee.github.io/mirror/icons/450x300.jpg" />
+    <meta name="twitter:image:width" content="450" />
+    <meta name="twitter:image:height" content="300" />
     
-  </body>
+
+    <!-- ICONS ///////////////////////////////////////////////////////////////////// -->
+    
+    <!--
+    Favicon generator: http://favicon.htmlkit.com/favicon
+    http://www.netmagazine.com/features/create-perfect-favicon
+    -->
+
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="icons/152x152.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="icons/120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="icons/76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/72x72.png" />
+    <link rel="apple-touch-icon-precomposed" href="icons/57x57.png" />
+    <link rel="shortcut icon" href="icons/32x32.png" />
+    <link rel="icon" href="icons/favicon.ico" />
+
+    <!-- 
+    Tile icon for Win8
+    Disable link highlighting upon tap in IE10
+    http://blogs.msdn.com/b/ie/archive/2012/06/08/high-quality-visuals-for-pinned-sites-in-windows-8.aspx
+    -->
+
+    <meta name="application-name" content="Mirror" />
+    <meta name="msapplication-tooltip" content="Webcam motion detection experiment" />
+    <meta name="msapplication-TileImage" content="icons/144x144.png" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    
+    
+    <!-- CSS /////////////////////////////////////////////////////////////////////// -->
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:100" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300" />
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+
+    <header>
+
+        <noscript><h3>No javascript detected :(</h3></noscript>
+        <h1>Mir<span class="r">r</span><span class="o">o</span>r</h1>
+
+    </header>
+    <div id="mirror"></div>
+    <footer>
+
+        <video autoplay></video>    
+        <canvas></canvas>
+        <p>
+            <a href="https://twitter.com/gwenvanhee/" class="icon icon-twitter" target="_blank">@gwenvanhee</a>
+            <a href="https://github.com/gwenvanhee/mirror/" class="icon icon-github" target="_blank">github source</a>
+        </p>
+
+    </footer>
+
+
+    <script src="mirror.min.js"></script>
+
+
+</body>
 </html>
