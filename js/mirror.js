@@ -7,9 +7,9 @@ var Grabber = (function() {
 
 	'use strict';
 	
-	var video  = document.querySelector('video'),
-		header = document.querySelector('header'),
-		alert  = document.createElement('h3');
+	var video = document.querySelector('video'),
+	    header = document.querySelector('header'),
+	    alert = document.createElement('h3');
 
 	// Remove noscript-message
 	header.removeChild(document.querySelector('noscript'));
@@ -110,11 +110,9 @@ var Subtraction = (function() {
 
 	var canvas = document.querySelector('canvas'),
 	    c = canvas.getContext('2d'),
-
 	    width = 160,
 	    height = 120,
 	    threshold = 30,
-
 	    frames = 0,
 	    abs = Math.abs,
 	    size = width * height,
