@@ -192,22 +192,22 @@ var Subtraction = (function() {
 	var convertToGrayscale = function(color) {
 
 		var grayscale = c.createImageData(width, height),
-			colordata = color.data,
-			graydata  = grayscale.data,
-			i         = size;
+		    graydata = grayscale.data,
+		    colordata = color.data,
+		    i = size;
 
 		while(--i) {
 
 			var r = 4 * i,
-				g = r + 1,
-				b = r + 2,
-				a = r + 3,
-				brightness = 0.34 * colordata[r] + 0.5 * colordata[g] + 0.16 * colordata[b];
+			    g = r + 1,
+			    b = r + 2,
+			    a = r + 3,
+			    brightness = 0.34 * colordata[r] + 0.5 * colordata[g] + 0.16 * colordata[b];
 
-			graydata[r] = brightness;	// Red
-			graydata[g] = brightness;	// Green
-			graydata[b] = brightness;	// Blue
-			graydata[a] = 255;			// Alpha
+			graydata[r] = brightness;    // Red
+			graydata[g] = brightness;    // Green
+			graydata[b] = brightness;    // Blue
+			graydata[a] = 255;           // Alpha
 		}
 
 		return grayscale;
