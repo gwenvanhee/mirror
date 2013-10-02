@@ -435,7 +435,7 @@ var Sound = (function() {
 	window.AudioContext = window.AudioContext || window.webkitAudioContext;
 
 	// Create audio context
-	var audio = new AudioContext();
+	var audio = window.AudioContext ? new AudioContext() : false;
 
 
 	//
@@ -443,6 +443,10 @@ var Sound = (function() {
 	//
 
 	var generator = function() {
+
+		// Stop here if there's
+		// no Web Audio API support
+		if(!audio) return;
 
 		var oscillator = audio.createOscillator(),
 		    volume = audio.createGain();
