@@ -445,7 +445,7 @@ var Sound = (function() {
 	var generator = function() {
 
 		var oscillator = audio.createOscillator(),
-			volume     = audio.createGain();
+		    volume = audio.createGain();
 
 		// Use gain to gently fade-out the volume
 		// and patch the output to the audio context
