@@ -108,16 +108,18 @@ var Subtraction = (function() {
 
 	'use strict';
 
-	var canvas    = document.querySelector('canvas'),
-		c         = canvas.getContext('2d'),
-		width     = 160,
-		height    = 120,
-		threshold = 30,
-		frames    = 0,
-		abs       = Math.abs,
-		size      = width * height,
+	var canvas = document.querySelector('canvas'),
+	    c = canvas.getContext('2d'),
 
-		pixels, grayscale, bg, diff;
+	    width = 160,
+	    height = 120,
+	    threshold = 30,
+
+	    frames = 0,
+	    abs = Math.abs,
+	    size = width * height,
+
+	    pixels, grayscale, bg, diff;
 
 
 	//
