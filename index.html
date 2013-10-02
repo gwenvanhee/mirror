@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+
+    <!-- SEO /////////////////////////////////////////////////////////////////////// -->
+
+    <title>MIRROR</title>
+
+    <meta name="description" content="{{__PAGE_DESCRIPTION__}}" />
+    <meta name="keywords" content="{{__PAGE_KEYWORDS__}}" />
+
+    <meta name="robots" content="noodp, noydir" />
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="cleartype" content="on" />
+
+
+    <!-- G+ AND FACEBOOK /////////////////////////////////////////////////////////// -->
+
+    <!--
+    Added Facebook Share Button support
+    http://davidwalsh.name/facebook-meta-tags
+    http://ogp.me
+    -->
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{__SITE_NAME__}}" />
+    <meta property="og:title" content="{{__PAGE_TITLE__}}" />
+    <meta property="og:description" content="{{__PAGE_DESCRIPTION__}}" />
+    <meta property="og:url" content="{{__CANONICAL_PATH_TO_THIS_PAGE__}}" />
+    <meta property="og:image" content="http://www.{{__SITE_URL__}}/icons/200x200.jpg" />
+
+    <link rel="image_src" href="http://www.{{__SITE_URL__}}/icons/200x200.jpg" />
+
+
+    <!-- TWITTER CARDS ///////////////////////////////////////////////////////////// -->
+
+    <!--
+    Images for Twitter Cards should be min. 280px width, and min. 150px height (max. 1MB)
+    Note: you'll need to validate your cards @twitter (after launch) for twitter cards to work
+    https://dev.twitter.com/docs/cards/validation/validator
+    -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="{{__@TWITTER_ACCOUNT__}}" />
+    <meta name="twitter:title" content="{{__PAGE_TITLE__}}" />
+    <meta name="twitter:description" content="{{__PAGE_DESCRIPTION__}}" />
+    <meta name="twitter:image:src" content="http://www.{{__SITE_URL__}}/icons/450x300.jpg" />
+    <meta name="twitter:image:width" content="450" />
+    <meta name="twitter:image:height" content="300" />
+    
+
+    <!-- ICONS ///////////////////////////////////////////////////////////////////// -->
+    
+    <!--
+    Favicon generator: http://favicon.htmlkit.com/favicon
+    http://www.netmagazine.com/features/create-perfect-favicon
+    -->
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/72x72.png" />
+    <link rel="apple-touch-icon-precomposed" href="icons/57x57.png" />
+    <link rel="shortcut icon" href="icons/32x32.png" />
+    <link rel="icon" href="icons/favicon.ico" />
+
+    <!-- 
+    Tile icon for Win8
+    Disable link highlighting upon tap in IE10
+    http://blogs.msdn.com/b/ie/archive/2012/06/08/high-quality-visuals-for-pinned-sites-in-windows-8.aspx
+    -->
+
+    <meta name="application-name" content="{{__PAGE_TITLE__}}" />
+    <meta name="msapplication-tooltip" content="{{__PAGE_DESCRIPTION__}}" />
+    <meta name="msapplication-TileImage" content="icons/144x144.png" />
+    <meta name="msapplication-TileColor" content="#0A0A0A" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    
+    
+    <!-- CSS /////////////////////////////////////////////////////////////////////// -->
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:100" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300" />
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+
+    <header>
+
+        <noscript><h3>No javascript detected :(</h3></noscript>
+        <h1>Mir<span class="r">r</span><span class="o">o</span>r</h1>
+
+    </header>
+    <div id="mirror"></div>
+    <footer>
+
+        <video autoplay></video>    
+        <canvas></canvas>
+        <p>
+            <a href="https://twitter.com/gwenvanhee/" class="icon icon-twitter" target="_blank">@gwenvanhee</a>
+            <a href="https://github.com/gwenvanhee/" class="icon icon-github" target="_blank">github source</a>
+        </p>
+
+    </footer>
+
+
+    <script src="js/mirror.js"></script>
+
+
+</body>
+</html>

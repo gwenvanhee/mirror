@@ -1,0 +1,11 @@
+//
+// CSS3 KEYFRAMES --------------------------------------------------------------------
+// https://gist.github.com/ericam/1607696s
+//
+
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} { @content; }
+	@-moz-keyframes #{$name} { @content; }
+	@-ms-keyframes #{$name} { @content; }
+	@keyframes #{$name} { @content; } 
+}

@@ -1,0 +1,13 @@
+//
+// CSS3 ANIMATIONS -------------------------------------------------------------------
+//
+
+@mixin cssAnimation($name, $time, $iteration, $easing) {
+	// enable hardware acceleration
+	@include translate3d(0, 0, 0);
+	// animation
+	@include experimental("animation", $name $time $iteration $easing);
+	// prevent flickering in animation 
+	@include backface-visibility(hidden);
+  	@include perspective(1000);
+}

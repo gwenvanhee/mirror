@@ -1,0 +1,14 @@
+//
+// CSS3 TRANSITIONS ------------------------------------------------------------------
+// http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css
+//
+
+@mixin cssTransition($prop, $time, $easing) {
+	// enable hardware acceleration
+	@include translate3d(0, 0, 0);
+	// transition
+	@include transition($prop $time $easing);
+	// prevent flickering in animation 
+	@include backface-visibility(hidden);
+  	@include perspective(1000);
+}
