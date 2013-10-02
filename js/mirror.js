@@ -223,19 +223,19 @@ var Subtraction = (function() {
 
 	var subtractBackground = function(color, background, gray) {
 
-		var result    = c.createImageData(width, height),
-			data      = result.data,
-			colordata = color.data,
-			bgdata    = background.data,
-			graydata  = gray.data,
-			i         = size;
+		var result = c.createImageData(width, height),
+		    bgdata = background.data,
+		    colordata = color.data,
+		    graydata = gray.data,
+		    data = result.data,
+		    i = size;
 
 		while(--i) {
 
 			var r = 4 * i,
-				g = r + 1,
-				b = r + 2,
-				a = r + 3;
+			    g = r + 1,
+			    b = r + 2,
+			    a = r + 3;
 
 			data[r] = abs( bgdata[r] - graydata[r] ) < threshold ? 0 : colordata[r];
 			data[g] = abs( bgdata[g] - graydata[g] ) < threshold ? 0 : colordata[g];
