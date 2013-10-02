@@ -492,28 +492,28 @@ var Sound = (function() {
 
 var rAF = (function() {
 
-    'use strict';
+	'use strict';
 
-    var vendors = ['ms', 'o', 'moz', 'webkit', ''], i = vendors.length;
-    var then = 0;
-    var rAF;
+	var vendors = ['ms', 'o', 'moz', 'webkit', ''], i = vendors.length;
+	var then = 0;
+	var rAF;
 
-    while(i-- && !rAF) rAF = window[vendors[i] + 'requestAnimationFrame'];
-    rAF = rAF || function(callback) {
+	while(i-- && !rAF) rAF = window[vendors[i] + 'requestAnimationFrame'];
+	rAF = rAF || function(callback) {
 
-        var now = +new Date(), time = Math.max(0, 16 - (now - then));
-        var id = setTimeout(function() { callback(now + time); }, time);
-        then = now + time;
+		var now = +new Date(), time = Math.max(0, 16 - (now - then));
+		var id = setTimeout(function() { callback(now + time); }, time);
+		then = now + time;
 
-        return id;
+		return id;
 
-    };
+	};
 
 
-    //
+	//
 	// API --------------------------------------------------
 	//
 
-    return rAF;
+	return rAF;
 
 }());
