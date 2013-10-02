@@ -257,9 +257,9 @@ var Subtraction = (function() {
 	var getPixelColor = function(color, x, y) {
 	
 		var offset = x * 4 + y * 4 * color.width,
-			data   = color.data,
+		    data = color.data,
 
-			r, g, b, a;
+		    r, g, b, a;
 
 		r = data[offset];
 		g = data[offset + 1];
